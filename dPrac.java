@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.time.LocalDate;
-// import java.time.Period;
+
 
 
 public class dPrac{
@@ -8,20 +8,26 @@ public class dPrac{
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter your birthdate(YYYY-MM-DD) : ");
-        String dt = scanner.nextLine();
-        
-        LocalDate localDate = LocalDate.parse(dt);
-        // System.out.println("Date : " + localDate);
-        int year1 = localDate.getYear();
-        
-        LocalDate localDt2 = LocalDate.now();
-        // System.out.println(localDt2);
+        System.out.println("Enter DOB (YYYY-MM-DD) : ");
+        String dt1 = scanner.nextLine();
 
-        int year2 = localDt2.getYear();
+        LocalDate localDate1 = LocalDate.parse(dt1);
+        // System.out.println(localDate1);
 
-        int age  = year2-year1;
-        System.out.println(age);
+        int year1 = localDate1.getYear();
+        // System.out.println(year1);
+
+
+        LocalDate localDate2 = LocalDate.now();
+        int year2 = localDate2.getYear();
+
+        int age = year2-year1;
+
+        System.out.println("Your are " + age + " years old." );
+
+
+
+
 
 
 
