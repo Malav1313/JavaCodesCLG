@@ -1,5 +1,5 @@
 // Fizz buzz
-public class Main
+public class fizzbuzz
 {
 	public static void main(String[] args) {
 	    int i;
